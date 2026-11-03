@@ -1,0 +1,32 @@
+{
+  "name": "recetario-nutritivo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpgala12-gif/recetario-nutritivo-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jpgala12-gif/recetario-nutritivo-api/issues"
+  },
+  "homepage": "https://github.com/jpgala12-gif/recetario-nutritivo-api#readme",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
