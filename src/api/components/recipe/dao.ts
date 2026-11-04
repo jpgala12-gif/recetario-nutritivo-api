@@ -1,4 +1,5 @@
-import { RecipeModel, IRecipe } from './model.js';
+import { RecipeModel } from './model.js';
+import type { IRecipe } from './model.js';
 
 export const getAllRecipesDAO = async (): Promise<IRecipe[]> => {
   return await RecipeModel.find();
