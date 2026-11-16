@@ -3,7 +3,10 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/recetario-db';
+const MONGO_URI = process.env.MONGO_URI;
+if (!MONGO_URI) {
+  throw new Error('Falta la variable MONGO_URI en el archivo .env');
+}
 
 export const connectDB = async (): Promise<void> => {
   try {
