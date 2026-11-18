@@ -14,7 +14,10 @@ export const createRecipeDAO = async (recipeData: Partial<IRecipe>): Promise<IRe
 };
 
 export const updateRecipeDAO = async (id: string, recipeData: Partial<IRecipe>): Promise<IRecipe | null> => {
-  return await RecipeModel.findByIdAndUpdate(id, recipeData, { new: true });
+  return await RecipeModel.findByIdAndUpdate(id, recipeData, {
+    returnDocument: 'after',
+    runValidators: true,
+  });
 };
 
 export const deleteRecipeDAO = async (id: string): Promise<IRecipe | null> => {

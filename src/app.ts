@@ -3,6 +3,7 @@ import type { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './db/connection.js';
 import recipeRoutes from './api/components/recipe/routes.js';
+import userRoutes from './api/components/user/routes.js';
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use('/api/recipes', recipeRoutes);
+app.use('/api/users', userRoutes);
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   if (err.type === 'entity.parse.failed') {
     res.status(400).json({ message: 'El JSON enviado no es válido' });
