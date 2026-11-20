@@ -1,6 +1,7 @@
 import express from 'express';
 import type { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';
+import { logger } from './api/middlewares/logger.middleware.js';
 import { connectDB } from './db/connection.js';
 import recipeRoutes from './api/components/recipe/routes.js';
 import userRoutes from './api/components/user/routes.js';
@@ -10,6 +11,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(logger);
 app.use(express.json());
 app.use('/api/recipes', recipeRoutes);
 app.use('/api/users', userRoutes);

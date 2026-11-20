@@ -265,6 +265,9 @@ Los errores se devuelven con este formato:
   "message": "Descripción del error"
 }
 ```
+## Extras implementados
+
+- **Middleware de logging:** cada petición muestra en la consola el método HTTP y la URL (por ejemplo, `GET /api/recipes`). Está en `src/api/middlewares/logger.middleware.ts`.
 
 ## Pruebas
 
