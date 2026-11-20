@@ -1,0 +1,222 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Recetario",
+    "collectionId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+    "dateExported": "2026-11-20T17:38:28.957Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9e3943d0-fe2e-4290-b65d-94d0552d3c59",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/users/register",
+            "url": "http://localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2026-11-20T17:20:34.160Z",
+            "modified": "2026-11-20T17:20:34.160Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"maria@mail.com\",",
+                    "  \"password\": \"clave123\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "7e812259-2bf7-4818-9b1b-48a638d5fc24",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/users/login",
+            "url": "http://localhost:3000/api/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-11-20T17:20:43.448Z",
+            "modified": "2026-11-20T17:20:43.448Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"maria@mail.com\",",
+                    "  \"password\": \"incorrecta\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "5075a88a-16c2-48c8-80a6-10839d7f28a3",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes",
+            "url": "http://localhost:3000/api/recipes",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2026-11-20T17:20:51.616Z",
+            "modified": "2026-11-20T17:20:51.616Z",
+            "headers": []
+        },
+        {
+            "_id": "64fb6b70-0b60-4cd8-9913-5ee83ac3aad6",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes/6afcf9700026c9f7a89c7456",
+            "url": "http://localhost:3000/api/recipes/6b007e28b62e1cf5fe63a780",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2026-11-20T17:21:02.976Z",
+            "modified": "2026-11-20T17:21:02.976Z",
+            "headers": []
+        },
+        {
+            "_id": "087e7cb2-ff5b-40b3-82a3-864da13ec184",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes/6b007e28b62e1cf5fe63a780",
+            "url": "http://localhost:3000/api/recipes/6b007e28b62e1cf5fe63a780",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2026-11-20T17:21:09.344Z",
+            "modified": "2026-11-20T17:21:09.344Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"tiempoPreparacion\": 45\r",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDA3YzRhYjYyZTFjZjVmZTYzYTc3ZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk1MTkzOTc2LCJleHAiOjE3OTUxOTc1NzZ9.8B0TFIRcK5XgC9t_SWNfFSVXsouyLCJkwAQJuH1vTwU"
+            }
+        },
+        {
+            "_id": "21cfbe4b-9380-4653-ad94-8263cb927228",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes/6b007e28b62e1cf5fe63a780",
+            "url": "http://localhost:3000/api/recipes/6b007e28b62e1cf5fe63a780",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2026-11-20T17:21:23.447Z",
+            "modified": "2026-11-20T17:21:23.447Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDA3YzRhYjYyZTFjZjVmZTYzYTc3ZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk1MTkzOTc2LCJleHAiOjE3OTUxOTc1NzZ9.8B0TFIRcK5XgC9t_SWNfFSVXsouyLCJkwAQJuH1vTwU"
+            }
+        },
+        {
+            "_id": "0a5a00d8-030a-4d35-b0b4-6c97bf9e1e2f",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes/64b7f0c2a1b2c3d4e5f60718",
+            "url": "http://localhost:3000/api/recipes/64b7f0c2a1b2c3d4e5f60718",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2026-11-20T17:21:29.663Z",
+            "modified": "2026-11-20T17:21:29.663Z",
+            "headers": []
+        },
+        {
+            "_id": "f731385b-fbac-4d84-b6c2-a9bbc52a56bb",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes",
+            "url": "http://localhost:3000/api/recipes",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2026-11-20T17:27:08.445Z",
+            "modified": "2026-11-20T17:27:08.445Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"nombre\": \"Tortilla de papa\",",
+                    "  \"ingredientes\": [\"huevo\", \"papa\", \"cebolla\"],",
+                    "  \"tiempoPreparacion\": 30,",
+                    "  \"dificultad\": \"Fácil\"",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDA3YzRhYjYyZTFjZjVmZTYzYTc3ZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk1MTkzOTc2LCJleHAiOjE3OTUxOTc1NzZ9.8B0TFIRcK5XgC9t_SWNfFSVXsouyLCJkwAQJuH1vTwU"
+            }
+        },
+        {
+            "_id": "7e5e48cf-dffa-4fb2-8401-75824bce7a1a",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/users/register",
+            "url": "http://localhost:3000/api/users/register",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2026-11-20T17:29:51.820Z",
+            "modified": "2026-11-20T17:29:51.820Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"maria@mail.com\",",
+                    "  \"password\": \"clave123\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "f5cb94e6-4c12-4f3b-802e-69ab5c004afd",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes",
+            "url": "http://localhost:3000/api/recipes",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2026-11-20T17:32:49.634Z",
+            "modified": "2026-11-20T17:32:49.634Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDA3YzRhYjYyZTFjZjVmZTYzYTc3ZiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk1MTkzOTc2LCJleHAiOjE3OTUxOTc1NzZ9.8B0TFIRcK5XgC9t_SWNfFSVXsouyLCJkwAQJuH1vTwU"
+            }
+        },
+        {
+            "_id": "e4193bac-4eb9-40f4-8234-9c9bafbc33dd",
+            "colId": "a22bf673-c08d-420f-9b9b-6b31ac94207e",
+            "containerId": "",
+            "name": "http://localhost:3000/api/recipes",
+            "url": "http://localhost:3000/api/recipes",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2026-11-20T17:34:27.162Z",
+            "modified": "2026-11-20T17:34:27.162Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"nombre\": \"Tortilla de papa\",\r",
+                    "  \"ingredientes\": [\"huevo\", \"papa\", \"cebolla\"],\r",
+                    "  \"tiempoPreparacion\": 30,\r",
+                    "  \"dificultad\": \"Fácil\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        }
+    ],
+    "ref": "FKT9ms0K2_czvb3vDw-ifb1iVVdIHSQPAlK9oIF2Cje6ZcGi8ZnOXXZopIcBt3LO5IdisFaNctBhYzHpe0ACwA"
+}
